@@ -1,0 +1,70 @@
+{
+    "url":
+          {
+           "url_belbazar_page_men" : "https://belbazar24.by/men/dress",
+           "url_belbazar_page_women" : "https://belbazar24.by/women/dress/",
+           "url_belbazar_product" : "https://belbazar24.by",
+           "url_women_new":"https://belbazar24.by/women/new/",
+           "url_men_new":"https://belbazar24.by/men/new/"
+          },
+
+    "xpath" : 
+            {
+             "number_page_xpath" : "//*[@class='navigation_content']//a[last()]/text()",
+             "box_dress_xpath" : ".//div [@class='product_item']",
+             "link_dress_xpath" : ".//*[@class = 'product_item_image']/@href",
+             "sale_xpath" : ".//div//a[@class='product_znak new']/text()",
+             "type_dress_xpath" : ".//div//*[@class='prod_param_item']/text()",
+             "choise_brand_xpath" : ".//div [@class='prod_brand_nazv']/a/text()",
+             "article_xpath" : ".//div [@class='prod_top_title']/text()",
+             "description_xpath" : ".//div [@class='prod_text_1']/div [@class='prod_text_box']/div/p//text()",
+             "type_product_xpath" : ".//div [@class='prod_param_list']/div [@class='prod_param_item']//text()",
+             "size_row_xpath" : ".//div [@class='p_size_list']/div [@class='prod_size_item']/text()",
+             "wholesale_price_with_discount_xpath" : ".//div [@class='prod_info_price']/span [@class='price']/text()",
+             "wholesale_price_xpath":".//div[@class='prod_info_price']/span[@class='old']/span[@class='price']/text()",
+             "url_photos_in_the_catalog_xpath_temp" : ".//div [@class='prod_mini_pic_item']/a/@data-cloudzoom",
+             "url_photos_in_the_catalog_xpath" : ".//div [@class='prod_mini_pic_item']/a//img/@src",
+             "url_main_photo_xpath" : ".//div//a[@class='product_item_image']/img/@src",
+             "price"  :".//*[@class = 'product_item_i']//*[@class = 'price']//text()"   
+            },
+
+
+    "paths" :
+            {
+            "path_to_photo" : "F:/rabota_odetaunas/foto_full/",
+            "path_to_ftp" : "/home/admin/web/odetaunas.ru/public_html/template/foto/"
+            },        
+     
+    "headers" : 
+            {
+             "accept": "*/*",
+             "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+            },
+
+    "proxies" :
+            {"":""
+            },
+              
+    "blank_for_dollars" :
+            {
+             "sendform":"kurs",
+             "actual_kurs":"3"
+            },
+    
+    "blank_for_rub" :
+            {
+             "sendform":"kurs",
+             "actual_kurs":"5"
+            },
+
+    "database_table_name" :
+            {
+                "osd_tovar" : "osd_tovar_Anton",
+                "osd_constants" : "osd_constants_Anton",
+                "osd_proizv" : "osd_proizv_temp_Anton",
+                "osd_tov_vid" : "osd_tov_vid_Anton",
+                "osd_tov_kat" : "osd_tov_kat_Anton",
+                "osd_tov_mat" : "osd_tov_mat_Anton",
+                "osd_tov_tip" : "osd_tov_tip_Anton"
+            }     
+}
